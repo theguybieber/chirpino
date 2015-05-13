@@ -1,0 +1,47 @@
+#######################################
+# Syntax Coloring Map Beaks
+#######################################
+
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Synth	KEYWORD1
+Beak	KEYWORD1
+PortamentoBeak	KEYWORD1
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+beginFrameSequence	KEYWORD2
+addFrame	KEYWORD2
+addSustainFrame	KEYWORD2
+endFrameSequence	KEYWORD2
+play	KEYWORD2
+setVolume	KEYWORD2
+chirp	KEYWORD2
+setParameters	KEYWORD2
+begin	KEYWORD2
+head	KEYWORD2
+append	KEYWORD2
+tail	KEYWORD2
+
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+TheSynth	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+BAD_CHIRP_CODE_WARNING	LITERAL1
+CHIRP_STRING_LENGTH_WARNING	LITERAL1
+TOO_LITTLE_RAM_WARNING	LITERAL1
+FRAME_STORE_FULL_WARNING	LITERAL1
+NO_FRAMES_TO_PLAY_WARNING	LITERAL1
+MISSING_END_FRAME_WARNING	LITERAL1
+LATE_SAMPLE_PULSE_WARNING	LITERAL1
