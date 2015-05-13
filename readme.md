@@ -12,4 +12,5 @@ Or our **[page for developers](chirp.io/hello-developers/)**
 
 **Chirpino for Arduino Mega** is a full-featured command line or script-driven example and demonstration program using both of the above libraries. It lets you create, play and store lists of chirps, and schedule them to be played at chosen times or triggered by buttons or your own events.
 
-More, including code for the Spark Core, coming soon..
+**Chirpino for Spark Core** is the same program but for the naturally WiFi-connected Spark Core. It offers all the above plus cloud commands.
+
