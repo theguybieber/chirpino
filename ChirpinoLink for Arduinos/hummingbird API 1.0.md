@@ -40,16 +40,18 @@ Chirp codes are 18 characters long and may contain digits, and letters in the ra
 
 As with all JSON, the order of named fields is arbitrary so may differ from the examples below. Most strings should just contain ASCII printable characters, although escape sequences such as \t and \n may be used within the body of text messages.
 
+
 #### Error responses
 
 If the server is unable to process your request you will receive an error status code in the HTTP response and no JSON payload.
+
 
 #### Create a chirp for a URL
 
 Your URL value should begin with `http://`. The title is any short piece of text, although commonly the domain section of the url is used. You receive a freshly-minted chirp code. Eg
 
 
-POST to `hummingbird.chirp.io/chirp`
+POST to `hummingbird.chirp.io:1254/chirp`
 
 	{
 		"mimetype": "text/url",
@@ -69,7 +71,7 @@ response:
 
 This is similar to the above, but the text is supplied in a field called `body` and the mimetype is given as `text/plain`. As above, the title may be any short piece of text although here it is conventionally the beginning of the message. Eg
 
-POST to `hummingbird.chirp.io/chirp`
+POST to `hummingbird.chirp.io:1254/chirp`
 
 	{
 		"mimetype": "text/plain",
@@ -84,11 +86,12 @@ response:
 		"code": "0123456789abcdefgh"
 	}
 
+
 #### Fetch chirp details
 
 Supply a valid chirp code at the end of the url to retrieve its details from the server. Eg
 
-GET from `hummingbird.chirp.io/chirp/f3jhi0kcfgola4ujcj`
+GET from `hummingbird.chirp.io:1254/chirp/f3jhi0kcfgola4ujcj`
 
 response:
 
@@ -109,7 +112,7 @@ The times supplied for the `now` and `created_at` fields are based on different 
 
 This can be used whenever a device needs to know the time. As with all responses the format is "hh:mm:ss" in approximate UTC. Eg
 
-GET from `hummingbird.chirp.io/now`
+GET from `hummingbird.chirp.io:1254/now`
 
 response:
 
