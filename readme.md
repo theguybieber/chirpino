@@ -1,11 +1,15 @@
 ##Welcome to the Chirpino repository
 
-The source of software for getting your small devices to chirp.
+Software for helping your small devices to chirp.
 
 See **[Chirp.io](chirp.io)** 
 
 Or our **[page for developers](chirp.io/hello-developers/)**
 
-Our first release is the **ChirpinoSing** library for Arduinos; it enables Atmel-based Arduinos (and the UCL Engduino) to play chirps though connected earbuds or other simple speakers.
+**ChirpinoSing for Arduinos** enables certain AVR-based Arduinos (and the UCL Engduino) to play chirps though connected earbuds or other simple speakers.
 
-Much more coming very soon..
+**ChirpinoLink for Arduinos** enables AVR-based Arduinos with an Ethernet Shield to get online and talk to the Chirp Server to create new chirps and query existing codes.
+
+**Chirpino for Arduino Mega** is a full-featured command line or script-driven example and demonstration program using both of the above libraries. It lets you create, play and store lists of chirps, and schedule them to be played at chosen times or triggered by buttons or your own events.
+
+More, including code for the Spark Core, coming soon..
