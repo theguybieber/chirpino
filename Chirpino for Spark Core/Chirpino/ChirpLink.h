@@ -60,7 +60,7 @@ public:
     // ContentReader
     virtual void acceptResponse(char *content);
     virtual void acceptProblemResponse(char *message);
-    virtual void responseFinished();
+    virtual void responseFinished(bool ok);
 
     virtual void acceptTimeString(char *time);
     virtual void acceptNewChirpCode(char *code);

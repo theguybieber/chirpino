@@ -176,7 +176,9 @@ void NetworkLink::readRawResponse()
     Serial.println(F("<<<"));
 #endif
 
-    if(text->len() > 12 && strncmp(&text->start[9], "200", 3) == 0) { // found 200 at char 9 in HTTP/1.0 200 OK
+    bool ok = text->len() > 12 && strncmp(&text->start[9], "200", 3) == 0; // found 200 at char 9 in HTTP/1.0 200 OK
+
+    if(ok) {
         // status 200 OK
 
         // search for the end of the header block as marked by a blank line
@@ -205,5 +207,5 @@ void NetworkLink::readRawResponse()
     }
 
     busy = false;
-    contentReader->responseFinished();
+    contentReader->responseFinished(ok);
 }

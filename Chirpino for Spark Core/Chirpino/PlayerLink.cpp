@@ -65,12 +65,12 @@ void PlayerLink::acceptTimeString(char *time) {
 }
 
 
-void PlayerLink::acceptNewChirpCode(char *code){
+void PlayerLink::acceptNewChirpCode(char *code) {
     Playlists::currentPlaylist()->add(code);
 }
 
 
-void PlayerLink::acceptText(char *text){
+void PlayerLink::acceptText(char *text) {
     // playlist scripts are run within the context of playlist scriptPlaylistIx (but current playlist is restored at end)
     // when general web scripts are run they will use the current playlist context (and may change it)
 
@@ -88,8 +88,9 @@ void PlayerLink::acceptText(char *text){
 }
 
 
-void PlayerLink::responseFinished(){
-    if(requestType == NEW_TEXT_CHIRP_REQUEST || requestType == NEW_URL_CHIRP_REQUEST) {
+void PlayerLink::responseFinished(bool ok) {
+    // playing placed here as synthesizer shares the multipurpose buffer with web requests
+    if(ok && (requestType == NEW_TEXT_CHIRP_REQUEST || requestType == NEW_URL_CHIRP_REQUEST)) {
         Playlists::currentPlaylist()->play();
     }
     showPrompt();

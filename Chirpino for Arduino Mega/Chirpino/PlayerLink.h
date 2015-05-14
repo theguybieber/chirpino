@@ -35,7 +35,7 @@ public:
     //void acceptChirpInfo(char *key, char *value); // use ChirpLink functionality
     void acceptText(char *text);
 
-    void responseFinished();
+    void responseFinished(bool ok);
 };
 
 

@@ -23,7 +23,7 @@ class ContentReader {
 public:
     virtual void acceptResponse(char *responseContent) = 0;
     virtual void acceptProblemResponse(char *message) = 0;
-    virtual void responseFinished() = 0;
+    virtual void responseFinished(bool ok) = 0;
 };
 
 

@@ -90,7 +90,7 @@ void ChirpLink::acceptProblemResponse(char *message) {
 
 
 // virtual
-void ChirpLink::responseFinished() {
+void ChirpLink::responseFinished(bool ok) {
 }
 
 
