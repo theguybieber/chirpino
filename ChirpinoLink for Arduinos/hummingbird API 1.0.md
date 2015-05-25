@@ -3,7 +3,7 @@
 #### A small, simple API to get your IoT devices chirping
 
 Version 1.0 May 2015
-**[Chirp](chirp.io)**
+**[Chirp](http://chirp.io)**
 
 This short document explains how programs may interact with hummingbird.chirp.io to create and query chirp codes. It is written for developers who wish to write their own programs using this API. A ready-written library **ChirpinoLink** suitable for certain Atmel-based Arduinos is also being made available.
 

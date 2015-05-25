@@ -2,7 +2,7 @@
 ###for Arduino Mega2560 with Ethernet Shield
 
 Version 1.0 May 2015
-**[Chirp](chirp.io)**
+**[Chirp](http://chirp.io)**
 
 ## Overview
 
@@ -33,11 +33,11 @@ You'll also need a small speaker or an earphone for sound output, or you can ope
 
 ### Software dependencies
 
-**Chirpino** has been built and tested on the version 1.0.6 Arduino IDE. The **ChirpinoSing** library from [github](github.com/chirp/chirpino) generates the sound output; you need to add it to your development system as described [here](http://arduino.cc/en/Guide/Libraries). The **ChirpinoLink** library from the same repository is also simialrly required. Ethernet communications are handled by the Arduino **Ethernet** library which should already be installed in your IDE.
+**Chirpino** has been built and tested on the version 1.0.6 Arduino IDE. The **ChirpinoSing** library from [github](http://github.com/chirp/chirpino) generates the sound output; you need to add it to your development system as described [here](http://arduino.cc/en/Guide/Libraries). The **ChirpinoLink** library from the same repository is also simialrly required. Ethernet communications are handled by the Arduino **Ethernet** library which should already be installed in your IDE.
 
 ### Your API key
 
-To use the **Hummingbird API** you need to obtain a personal API key from **[here](chirp.io/hello-developers/)** and paste it into **PlayerLink.cpp**. This is a 22-character base-64 string that is used as an access token. All interaction with the **hummingbird** server requires this key to be supplied; don't share your key with others as any abuse - such as making an unreasonable number of requests - is traceable back to you.
+To use the **Hummingbird API** you need to obtain a personal API key from **[here](http://chirp.io/hello-developers/)** and paste it into **PlayerLink.cpp**. This is a 22-character base-64 string that is used as an access token. All interaction with the **hummingbird** server requires this key to be supplied; don't share your key with others as any abuse - such as making an unreasonable number of requests - is traceable back to you.
 
 ### Running the program
 

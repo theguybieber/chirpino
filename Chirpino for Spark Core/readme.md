@@ -2,7 +2,7 @@
 ###for Spark Core
 
 Version 1.0 May 2015
-**[Chirp](chirp.io)**
+**[Chirp](http://chirp.io)**
 
 ## Overview
 
@@ -42,7 +42,7 @@ You can control the Spark Core by sending commands from **Chirpino**'s extensive
 
 ### Your API key
 
-To use the **Hummingbird API** you need to obtain a personal API key from **[here](chirp.io/hello-developers/)** and paste it into **PlayerLink.cpp**. This is a 22-character base-64 string that is used as an access token. All interaction with the **hummingbird** server requires this key to be supplied; don't share your key with others as any abuse - such as making an unreasonable number of requests - is traceable back to you.
+To use the **Hummingbird API** you need to obtain a personal API key from **[here](http://chirp.io/hello-developers/)** and paste it into **PlayerLink.cpp**. This is a 22-character base-64 string that is used as an access token. All interaction with the **hummingbird** server requires this key to be supplied; don't share your key with others as any abuse - such as making an unreasonable number of requests - is traceable back to you.
 
 ### Running the program
 

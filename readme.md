@@ -2,9 +2,9 @@
 
 Software for helping your small devices to chirp.
 
-See **[Chirp.io](chirp.io)** 
+See **[Chirp.io](http://chirp.io)** 
 
-Or our **[page for developers](chirp.io/hello-developers/)**
+Or our **[page for developers](http://chirp.io/hello-developers/)**
 
 **ChirpinoSing for Arduinos** enables certain AVR-based Arduinos (and the UCL Engduino) to play chirps though connected earbuds or other simple speakers.
 
